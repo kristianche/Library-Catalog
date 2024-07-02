@@ -20,10 +20,8 @@ jobs:
         cache: 'npm'
     - name: Install dependenices
       run: npm install
-    - name: Start front-end part
-      run: npm run start-fe &
-    - name: Start back-end part
-      run: npm run start-be &
+    - name: Start the application
+      run: npm run start &
     - name: Install playwright
       run: npx playwright install
     - name: Execute UI Tests
